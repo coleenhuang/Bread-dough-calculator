@@ -1,0 +1,41 @@
+body {
+    font-size: 18px;
+    text-align: center;
+    
+    padding: 0 15% 5%;
+}
+header {
+    padding: 2rem;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    color: white;
+    background-color: #353535;
+    /*Find a background image to give a whiteboard like texture*/
+    padding: 1.5rem;
+    border-radius: 10px;
+    
+}
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: 600;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.align-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+

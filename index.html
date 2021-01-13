@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Baking Calculator</title>
+  </head>
+  <body>
+    <header>
+        <h1>Baking Calculator</h1>
+    </header>
+      
+    <form>
+        <section>
+            <h2>Recipe</h2>
+            <p>
+                <label>Recipe name:</label>
+                <input type="text">
+            </p>
+            <p>What do you want to calculate the ingredients by?</p>
+            
+            <div class='align-row'>
+                <select>
+                    <option value="dough-weight">
+                        Required dough weight(g)
+                    </option>
+                    <option value="flour-weight">
+                        Total flour weight
+                    </option>
+                </select>
+                <span>:</span>
+                <p>
+                    <input type="text" id="calc-ref" required>
+                </p>
+            </div>
+        </section>
+        <button type="button" class="preferment">Add a preferment</button>
+        <section>
+            <h3>Final Dough</h3>
+            <fieldset class='flour'>
+                <legend>Flours</legend>
+                <div class='align-row'>
+                    <p>
+                        <label>Name</label>
+                        <input type="text">
+                    </p>
+                    <span> : </span>
+                    <p>
+                        <input type="text">
+                    </p>
+                    <span>%</span>
+                </div>
+                <button type="button">Add type of flour</button>
+            </fieldset>
+            <fieldset class='liquids'>
+                <legend>Liquids</legend>
+                <div class='align-row'>
+                    <p>
+                        <label>Name</label>
+                        <input type="text">
+                    </p>
+                    <span> : </span>
+                    <p>
+                        <input type="text">
+                    </p>
+                    <span>%</span>
+                </div>
+                <button type="button">Add type of liquid</button>
+            </fieldset>
+            <fieldset class='other-ingredients'>
+                <legend>Other Ingredients</legend>
+                <div class='align-row'>
+                    <p>
+                        <label>Name</label>
+                        <input type="text">
+                    </p>
+                    <span> : </span>
+                    <p>
+                        <input type="text">
+                    </p>
+                    <span>%</span>
+                </div>
+                <div class='align-row'>
+                    <p>
+                        <label>Name</label>
+                        <input type="text">
+                    </p>
+                    <span> : </span>
+                    <p>
+                        <input type="text">
+                    </p>
+                    <span>%</span>
+                </div>
+                <button type="button">Add another ingredient</button>
+            </fieldset>
+        </section>
+        <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
