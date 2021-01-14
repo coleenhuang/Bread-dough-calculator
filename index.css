@@ -1,7 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-size: 18px;
-    text-align: center;
-    
     padding: 0 15% 5%;
 }
 header {
@@ -11,7 +12,7 @@ h1, h2, h3 {
     text-align: center;
 }
 form {
-    max-width: 450px;
+    max-width: 600px;
     margin: 0 auto;
     color: white;
     background-color: #353535;
@@ -23,6 +24,9 @@ form {
 fieldset {
     border: none;
 }
+fieldset li {
+    list-style-type: none;
+}
 
 legend {
     font-weight: 600;
@@ -30,12 +34,37 @@ legend {
 
 input {
     border-radius: 5px;
+    border: none;
 }
 
-.align-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+fieldset input, fieldset label {
+    display: block;
+}
+
+.left-column {
+    float: left;
+    margin-right: 20px;
+}
+
+.right-column {
+    float: left;
+}
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+.input1 {
+    width: 150px;
+}
+
+
+
+.input2 {
+    width: 110px;
 }
 

@@ -19,8 +19,8 @@
             </p>
             <p>What do you want to calculate the ingredients by?</p>
             
-            <div class='align-row'>
-                <select>
+            <div class='clearfix'>
+                <select class="left-column" id='type-ref'>
                     <option value="dough-weight">
                         Required dough weight(g)
                     </option>
@@ -28,10 +28,10 @@
                         Total flour weight
                     </option>
                 </select>
-                <span>:</span>
-                <p>
+                
+                <div class="right-column" >
                     <input type="text" id="calc-ref" required>
-                </p>
+                </div>
             </div>
         </section>
         <button type="button" class="preferment">Add a preferment</button>
@@ -39,58 +39,63 @@
             <h3>Final Dough</h3>
             <fieldset class='flour'>
                 <legend>Flours</legend>
-                <div class='align-row'>
-                    <p>
-                        <label>Name</label>
-                        <input type="text">
-                    </p>
-                    <span> : </span>
-                    <p>
-                        <input type="text">
-                    </p>
-                    <span>%</span>
-                </div>
+                <ul>
+                    <li class="clearfix">
+                        <div class='left-column'>
+                            <label for='flour-ingredient1'>
+                                Ingredient
+                            </label>
+                            <input class='input1' id='flour-ingredient1' type="text">
+                        </div>
+                        
+                        <div class='right-column'>    
+                            <label for="flour-percent1">
+                                %
+                            </label>
+                            <input class='input2' id="flour-percent1" type="text">
+                        </div>      
+                    </li>
+                </ul>
+                
                 <button type="button">Add type of flour</button>
             </fieldset>
             <fieldset class='liquids'>
                 <legend>Liquids</legend>
-                <div class='align-row'>
-                    <p>
-                        <label>Name</label>
-                        <input type="text">
-                    </p>
-                    <span> : </span>
-                    <p>
-                        <input type="text">
-                    </p>
-                    <span>%</span>
-                </div>
+                <ul>
+                    <li>
+                            <label class='top'>
+                                Ingredient
+                                <input type="text">
+                            </label>
+                            <span> : </span>
+                            <label class='top'>
+                                Baker's percentage(%)
+                                <input type="text">
+                            </label> 
+                    </li>
+                </ul>
                 <button type="button">Add type of liquid</button>
             </fieldset>
             <fieldset class='other-ingredients'>
                 <legend>Other Ingredients</legend>
-                <div class='align-row'>
-                    <p>
-                        <label>Name</label>
+                <ul>
+                    <li>
+                        <label class='top'>
+                            Ingredient
+                            <input type="text">
+                        </label>
+                        <span> : </span>
+                        <label class='top'>
+                            Baker's percentage(%)
+                            <input type="text">
+                        </label> 
+                    </li>
+                    <li>
                         <input type="text">
-                    </p>
-                    <span> : </span>
-                    <p>
-                        <input type="text">
-                    </p>
-                    <span>%</span>
-                </div>
-                <div class='align-row'>
-                    <p>
-                        <label>Name</label>
-                        <input type="text">
-                    </p>
-                    <span> : </span>
-                    <p>
-                        <input type="text">
-                    </p>
-                    <span>%</span>
-                </div>
+                        <span> : </span>
+                        <input type='text'>
+                    </li>
+                </ul>
                 <button type="button">Add another ingredient</button>
             </fieldset>
         </section>
