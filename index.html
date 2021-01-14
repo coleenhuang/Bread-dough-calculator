@@ -20,14 +20,16 @@
             <p>What do you want to calculate the ingredients by?</p>
             
             <div class='clearfix'>
-                <select class="left-column" id='type-ref'>
-                    <option value="dough-weight">
-                        Required dough weight(g)
-                    </option>
-                    <option value="flour-weight">
-                        Total flour weight
-                    </option>
-                </select>
+                <div class="left-column">
+                    <select  id='type-ref'>
+                        <option value="dough-weight">
+                            Required dough weight(g)
+                        </option>
+                        <option value="flour-weight">
+                            Total flour weight
+                        </option>
+                    </select>
+                </div>
                 
                 <div class="right-column" >
                     <input type="text" id="calc-ref" required>
@@ -62,16 +64,20 @@
             <fieldset class='liquids'>
                 <legend>Liquids</legend>
                 <ul>
-                    <li>
-                            <label class='top'>
+                    <li class="clearfix">
+                        <div class='left-column'>
+                            <label for='liquid-ingredient1'>
                                 Ingredient
-                                <input type="text">
                             </label>
-                            <span> : </span>
-                            <label class='top'>
-                                Baker's percentage(%)
-                                <input type="text">
-                            </label> 
+                            <input class='input1' id='liquid-ingredient1' type="text">
+                        </div>
+                        
+                        <div class='right-column'>    
+                            <label for="liquid-percent1">
+                                %
+                            </label>
+                            <input class='input2' id="liquid-percent1" type="text">
+                        </div>      
                     </li>
                 </ul>
                 <button type="button">Add type of liquid</button>
@@ -79,21 +85,29 @@
             <fieldset class='other-ingredients'>
                 <legend>Other Ingredients</legend>
                 <ul>
-                    <li>
-                        <label class='top'>
-                            Ingredient
-                            <input type="text">
-                        </label>
-                        <span> : </span>
-                        <label class='top'>
-                            Baker's percentage(%)
-                            <input type="text">
-                        </label> 
+                    <li class="clearfix">
+                        <div class='left-column'>
+                            <label for='other-ingredient1'>
+                                Ingredient
+                            </label>
+                            <input class='input1' id='other-ingredient1' type="text">
+                        </div>
+                        
+                        <div class='right-column'>    
+                            <label for="other-percent1">
+                                %
+                            </label>
+                            <input class='input2' id="other-percent1" type="text">
+                        </div>      
                     </li>
-                    <li>
-                        <input type="text">
-                        <span> : </span>
-                        <input type='text'>
+                    <li class="clearfix">
+                        <div class='left-column'>
+                            <input class='input1' id='other-ingredient2' type="text">
+                        </div>
+                        
+                        <div class='right-column'>    
+                            <input class='input2' id="other-percent2" type="text">
+                        </div>      
                     </li>
                 </ul>
                 <button type="button">Add another ingredient</button>

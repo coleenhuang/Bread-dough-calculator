@@ -58,6 +58,10 @@ fieldset input, fieldset label {
     clear: both;
  }
 
+input[type=text] {
+    height: 18px;
+}
+
 .input1 {
     width: 150px;
 }
