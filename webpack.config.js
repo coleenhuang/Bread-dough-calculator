@@ -17,5 +17,15 @@ module.exports = {
             filename: 'index.html', //output file
         }),
         new CleanWebpackPlugin(),
-    ]
+    ],
+    module: {
+        rules: [
+          // JavaScript
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: ['babel-loader'],
+          },
+        ],
+      },
 }
